@@ -7,7 +7,7 @@
 export default {
 	data() {
 		return {
-			qcrode: require('@/static/qcrode.png')
+			qcrode: require('../assets/qcrode.png')
 		}
 	}
 }
