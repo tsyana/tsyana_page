@@ -1,6 +1,9 @@
 <template>
 	<div class="qcorde-page">
-		<img class="qcrode" :src="qcrode" alt="">
+		<div class="qcrode">
+			<img :src="qcrode" alt="">
+			<h3>请用手机预览</h3>
+		</div>
 	</div>
 </template>
 <script>
@@ -16,10 +19,13 @@ export default {
 <style lang="scss" scoped>
 .qcorde-page{
 	.qcrode{
-		    position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%,-50%);
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		h3{
+			text-align: center;
+		}
 	}
 }
 </style>
