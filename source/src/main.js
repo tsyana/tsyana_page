@@ -7,9 +7,11 @@ Vue.use(VueFullpage)
 Vue.config.productionTip = false
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import "@/style/iconfont.css"
 
 // require styles
 import 'swiper/dist/css/swiper.css'
+import 'animate.css/animate.min.css'
 
 Vue.use(VueAwesomeSwiper)
 

@@ -1,7 +1,7 @@
 <template>
     <div class="compon-page2">
         <div class="position-part">
-            <div class="header"><span class="icon-position">icon</span><span class="header-title">工作经历</span></div>
+            <div class="header"><i class="iconfont icon-jibenxinxi1"></i><span class="header-title">工作经历</span></div>
             <div class="position-content" :style="{height: swiperHeight + 'px'}">
                 <swiper :options="swiperOption">
                     <swiper-slide v-for="item in 3">
@@ -42,17 +42,21 @@ $wine: rgb(138,21,27);
 $pink: rgb(188,99,103);
 $lightgreen: rgb(188, 201, 142);
 .compon-page2{
-    padding: 30px;
+    padding: 40px 30px;
     .position-part{
         position: relative;
-        border-top: 1px solid rgba(249,238,227,1);
+        border-top: 1px solid #DAECFC;
     }
     .header{
         position: absolute;
         top: -15px;
         display: flex;
+        i{
+            font-size: 20px;
+            color: #5699FF;
+        }
         &-title{
-            background: $lightback;
+            background: white;
             padding: 0 10px;
             color: #333333;
             font-weight: 300;  
@@ -62,11 +66,7 @@ $lightgreen: rgb(188, 201, 142);
     
     .icon-position{
         display: inline-block;
-        width: 25px;
         margin: 0px 5px;
-        border-radius: 5px;
-        height: 25px;
-        background: rgba(249,238,227,1);
     }
 }
 </style>

@@ -5,7 +5,7 @@
         <div class="page-1 page">
           <div class="part-1">
             <!-- <page3></page3> -->
-
+<!-- <page2></page2> -->
             <page1></page1>
           </div>
         </div>
@@ -77,7 +77,8 @@ $lightgreen: rgb(188, 201, 142);
     height: 100%;
   }
   .page-1, .page-2, .page-3 {
-    background: rgb(250,255,252);
+    // background: rgb(250,255,252);
+    background: white;
     // text-align: center;
     
   }
