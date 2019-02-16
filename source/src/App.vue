@@ -20,7 +20,7 @@ export default {
     }
   },
   created() {
-    // this.hideQcrode = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)
+    this.hideQcrode = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)
   }
 }
 </script>
