@@ -4,7 +4,7 @@
             <div class="header"><i class="iconfont icon-jibenxinxi1"></i><span class="header-title">工作经历</span></div>
             <div class="position-content" :style="{height: swiperHeight + 'px'}">
                 <swiper :options="swiperOption">
-                    <swiper-slide v-for="item in 3">
+                    <swiper-slide>
                         <div class="detail detail1">
                             <div class="info">
                                 <span>CCCCCDDPPPPPPP</span>
@@ -25,9 +25,75 @@
                             </div>
                         </div>
                     </swiper-slide>
-                    
+                    <swiper-slide>
+                        <div class="detail detail1">
+                            <div class="info">
+                                <span>薪得付信息技术有限公司</span>
+                                <span>2017.11-至今</span>
+                            </div>
+                            <div class="sub-info">
+                                <span>前端开发</span>
+                                <span class="strong">(vue,node,webpack)</span>
+                            </div>
+                            <div class="work">
+                                <span class="work-detail strong">工作职责</span>
+                                <span class="work-detail">1.负责公司原有项目的结构升级，性能优化</span>
+                                <span class="work-detail">2.负责新项目的构建</span>
+                                <span class="work-detail">3.参与业务需求的规划分析</span>
+                                <span class="work-detail">4.负责前端项目的code review</span>
+                                <span class="work-detail">5.负责公司Web项目、小程序、公众号、企业微信、APP的开发迭代，为第三方应用提供APP硬件支持</span>
+                                <span class="work-detail strong">主要业绩</span>
+                                <span class="work-detail">1.通过升级webpack、首页预渲染、合理拆包等优化提升原项目的首屏加载和打包速度（原10s到3s内）</span>
+                                <span class="work-detail">2.构建开发了Portal、HRD平台、个税小程序等，移植app功能至微信公众号</span>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="detail detail1">
+                            <div class="info">
+                                <span>国资商城</span>
+                                <span>2017.3–2017.11</span>
+                            </div>
+                            <div class="sub-info">
+                                <span>前端开发</span>
+                                <span class="strong">(nuxt,ssr)</span>
+                            </div>
+                            <div class="work">
+                                <span class="work-detail"></span>
+                                <span class="work-detail">1.负责公司原有项目的架构升级，性能优化</span>
+                                <span class="work-detail">2.负责新项目的构建</span>
+                                <span class="work-detail">3.参与业务需求的规划分析</span>
+                                <span class="work-detail">4.负责前端项目的code review</span>
+                                <span class="work-detail">5.业务上负责公司EcoSaas平台、小程序开发、公众号、企业微信、app的开发迭代，为第三方应用提供app硬件支持</span>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="detail detail1">
+                            <div class="info">
+                                <span>美特斯邦威</span>
+                                <span>2016.3–2017.11</span>
+                            </div>
+                            <div class="sub-info">
+                                <span>前端开发</span>
+                                <span class="strong">(nuxt,ssr)</span>
+                            </div>
+                            <div class="work">
+                                <span class="work-detail"></span>
+                                <span class="work-detail">1.负责公司原有项目的架构升级，性能优化</span>
+                                <span class="work-detail">2.负责新项目的构建</span>
+                                <span class="work-detail">3.参与业务需求的规划分析</span>
+                                <span class="work-detail">4.负责前端项目的code review</span>
+                                <span class="work-detail">5.业务上负责公司EcoSaas平台、小程序开发、公众号、企业微信、app的开发迭代，为第三方应用提供app硬件支持</span>
+                            </div>
+                        </div>
+                    </swiper-slide>
                      <div class="swiper-pagination" slot="pagination"></div>
                 </swiper>
+                <div class="right-bottom">
+                    <i class="iconfont icon-username icon1"></i>
+                    <i class="iconfont icon-username icon2"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -76,8 +142,10 @@ $lightgreen: rgb(188, 201, 142);
         height: 100%;
     }
     .position-content{
+        position: relative;
         margin-top: 30px;
         .detail{
+            position: relative;
             padding: 10px;
             .info{
                 display: flex;
@@ -94,11 +162,35 @@ $lightgreen: rgb(188, 201, 142);
             }
             .work{
                 margin-top: 20px;
+                .strong{
+                    font-weight: 600;
+                }
                 .work-detail{
                     color: #666666;
+                    font-size: 14px;
+                    line-height: 26px;
                     display: block;
                     // padding: 0 10px;
                 }
+            }
+        }
+        .right-bottom{
+            position: absolute;
+            bottom: 70px;
+            overflow: hidden;
+            right: 0;
+            i{
+                color: #FCF3EF;
+                font-size: 70px;
+            }
+            .icon1{
+                font-size: 57px;
+                margin-right: -19px;
+                display: inline-block;
+                vertical-align: baseline;
+            }
+            .icon2{
+                margin-right: -25px;
             }
         }
     }

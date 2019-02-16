@@ -28,7 +28,7 @@ $pink: rgb(188,99,103);
 $lightgreen: rgb(188, 201, 142);
 .compon-page1{
     .bak-color{
-        background:linear-gradient(180deg,rgba(121,201,255,1) 0%,rgba(245,239,254,1) 100%);
+        background:linear-gradient(180deg,#348dca 0%,rgba(245,239,254,1) 100%);
         opacity:0.06;
         height: 250px;
         width: 100%;
