@@ -4,7 +4,7 @@
             <div class="header"><i class="iconfont icon-jibenxinxi1"></i><span class="header-title">工作经历</span></div>
             <div class="position-content" :style="{height: swiperHeight + 'px'}">
                 <swiper :options="swiperOption">
-                    <swiper-slide>
+                    <!-- <swiper-slide>
                         <div class="detail detail1">
                             <div class="info">
                                 <span>CCCCCDDPPPPPPP</span>
@@ -24,7 +24,7 @@
                                 <span class="work-detail">值得信赖</span>
                             </div>
                         </div>
-                    </swiper-slide>
+                    </swiper-slide> -->
                     <swiper-slide>
                         <div class="detail detail1">
                             <div class="info">
@@ -35,16 +35,26 @@
                                 <span>前端开发</span>
                                 <span class="strong">(vue,node,webpack)</span>
                             </div>
-                            <div class="work">
-                                <span class="work-detail strong">工作职责</span>
-                                <span class="work-detail">1.负责公司原有项目的结构升级，性能优化</span>
-                                <span class="work-detail">2.负责新项目的构建</span>
-                                <span class="work-detail">3.参与业务需求的规划分析</span>
-                                <span class="work-detail">4.负责前端项目的code review</span>
-                                <span class="work-detail">5.负责公司Web项目、小程序、公众号、企业微信、APP的开发迭代，为第三方应用提供APP硬件支持</span>
-                                <span class="work-detail strong">主要业绩</span>
-                                <span class="work-detail">1.通过升级webpack、首页预渲染、合理拆包等优化提升原项目的首屏加载和打包速度（原10s到3s内）</span>
-                                <span class="work-detail">2.构建开发了Portal、HRD平台、个税小程序等，移植app功能至微信公众号</span>
+                            <div class="work toggle-style" :class="!toggleFlag ? '' : 'toggle-style-active'">
+                                <div class="toggle-style-item toggle-style-font" :style="{height: swiperHeight - 60 + 'px'}">
+                                    <div class="work-header">
+                                        <span class="work-detail strong">工作职责</span>
+                                        <i class="iconfont icon-fanzhuan1 animated infinite tada delay-1s" @click="toggleFlag = !toggleFlag"></i>
+                                    </div>
+                                    <span class="work-detail">1.负责公司原有项目的结构升级，性能优化</span>
+                                    <span class="work-detail">2.负责新项目的构建</span>
+                                    <span class="work-detail">3.参与业务需求的规划分析</span>
+                                    <span class="work-detail">4.负责前端项目的code review</span>
+                                    <span class="work-detail">5.负责公司Web项目、小程序、公众号、企业微信、APP的开发迭代，为第三方应用提供APP硬件支持</span>
+                                </div>
+                                <div class="toggle-style-item toggle-style-back"  :style="{height: swiperHeight - 60 + 'px'}">
+                                    <div class="work-header">
+                                        <span class="work-detail strong">主要业绩</span>
+                                        <i class="iconfont icon-fanzhuan1 animated infinite tada delay-1s"  @click="toggleFlag = !toggleFlag"></i>
+                                    </div>
+                                    <span class="work-detail">1.通过升级webpack、首页预渲染、合理拆包等优化提升原项目的首屏加载和打包速度（原10s到3s内）</span>
+                                    <span class="work-detail">2.构建开发了Portal、HRD平台、个税小程序等，移植app功能至微信公众号</span>
+                                </div>
                             </div>
                         </div>
                     </swiper-slide>
@@ -90,10 +100,10 @@
                     </swiper-slide>
                      <div class="swiper-pagination" slot="pagination"></div>
                 </swiper>
-                <div class="right-bottom">
+                <!-- <div class="right-bottom">
                     <i class="iconfont icon-username icon1"></i>
                     <i class="iconfont icon-username icon2"></i>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -160,6 +170,40 @@ $lightgreen: rgb(188, 201, 142);
                     color: #666666;
                 }
             }
+            .toggle-style{
+                position: relative;
+                perspective: 500;
+                &-item{
+                    position: absolute;
+                    top: 0;
+                    background-color: #fff;
+                    -webkit-perspective: 1000;
+                    -webkit-transition: all 1.5s;
+                    -moz-transition: all 1.5s;
+                    -ms-transition: all 1.5s;
+                    -o-transition: all 1.5s;
+                    overflow: hidden;
+                }
+                &-back{
+                    z-index: 1;
+                    position: relative;
+                    transform: rotateY(-180deg);
+                }
+                &-font{
+                    z-index: 2;
+                }
+               
+            }
+            .toggle-style-active{
+                .toggle-style-font{
+                    z-index: 1;
+                    transform: rotateY(-180deg);
+                }
+                .toggle-style-back{
+                    z-index: 2;
+                    transform: rotateY(-360deg);
+                }
+            }
             .work{
                 margin-top: 20px;
                 .strong{
@@ -170,13 +214,20 @@ $lightgreen: rgb(188, 201, 142);
                     font-size: 14px;
                     line-height: 26px;
                     display: block;
-                    // padding: 0 10px;
+                }
+                &-header{
+                    display: flex;
+                    justify-content: space-between;
+                    .iconfont{
+                        font-size: 14px;
+                        color: #333;
+                    }
                 }
             }
         }
         .right-bottom{
             position: absolute;
-            bottom: 70px;
+            // bottom: 70px;
             overflow: hidden;
             right: 0;
             i{
@@ -211,6 +262,7 @@ export default {
                     dynamicBullets: true
                 }
             },
+            toggleFlag: false,
             swiperHeight: 0
         }
     },
