@@ -196,11 +196,11 @@ $lightgreen: rgb(188, 201, 142);
             }
             .toggle-style-active{
                 .toggle-style-font{
-                    z-index: 1;
+                    // z-index: 1;
                     transform: rotateY(-180deg);
                 }
                 .toggle-style-back{
-                    z-index: 2;
+                    // z-index: 2;
                     transform: rotateY(-360deg);
                 }
             }
