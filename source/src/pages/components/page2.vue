@@ -171,18 +171,12 @@ $lightgreen: rgb(188, 201, 142);
                 }
             }
             .toggle-style{
-                position: relative;
-                perspective: 500;
+                position:relative;transition:0.6s;transform-style:preserve-3d;
                 &-item{
                     position: absolute;
                     top: 0;
                     background-color: #fff;
-                    -webkit-perspective: 1000;
-                    -webkit-transition: all 1.5s;
-                    -moz-transition: all 1.5s;
-                    -ms-transition: all 1.5s;
-                    -o-transition: all 1.5s;
-                    overflow: hidden;
+                    backface-visibility:hidden;
                 }
                 &-back{
                     z-index: 1;
@@ -195,14 +189,15 @@ $lightgreen: rgb(188, 201, 142);
                
             }
             .toggle-style-active{
-                .toggle-style-font{
-                    // z-index: 1;
-                    transform: rotateY(-180deg);
-                }
-                .toggle-style-back{
-                    // z-index: 2;
-                    transform: rotateY(-360deg);
-                }
+                transform:rotateY(180deg);
+                // .toggle-style-font{
+                //     // z-index: 1;
+                //     transform: rotateY(-180deg);
+                // }
+                // .toggle-style-back{
+                //     // z-index: 2;
+                //     transform: rotateY(-360deg);
+                // }
             }
             .work{
                 margin-top: 20px;

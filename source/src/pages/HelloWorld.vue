@@ -5,8 +5,8 @@
         <div class="page-1 page">
           <div class="part-1">
             <!-- <page3></page3> -->
-<!-- <page2></page2> -->
-            <page1></page1>
+<page2></page2>
+            <!-- <page1></page1> -->
           </div>
         </div>
         <div class="page-2 page">
