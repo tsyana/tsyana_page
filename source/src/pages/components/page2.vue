@@ -33,7 +33,7 @@
                             </div>
                             <div class="sub-info">
                                 <span>前端开发</span>
-                                <span class="strong">(vue,node,webpack)</span>
+                                <span class="strong">(vue,node,webpack,cordova)</span>
                             </div>
                             <div class="work toggle-style" :class="!toggleFlag ? '' : 'toggle-style-active'">
                                 <div class="toggle-style-item toggle-style-font" :style="{height: swiperHeight - 60 + 'px'}">
@@ -43,9 +43,9 @@
                                     </div>
                                     <span class="work-detail">1.负责公司原有项目的结构升级，性能优化</span>
                                     <span class="work-detail">2.负责新项目的构建</span>
-                                    <span class="work-detail">3.参与业务需求的规划分析</span>
+                                    <span class="work-detail">3.负责前端项目的部署和发布</span>
                                     <span class="work-detail">4.负责前端项目的code review</span>
-                                    <span class="work-detail">5.负责公司Web项目、小程序、公众号、企业微信、APP的开发迭代，为第三方应用提供APP硬件支持</span>
+                                    <span class="work-detail">5.负责公司Web项目、小程序、公众号、企业微信、APP的开发迭代</span>
                                 </div>
                                 <div class="toggle-style-item toggle-style-back"  :style="{height: swiperHeight - 60 + 'px'}">
                                     <div class="work-header">
@@ -53,7 +53,9 @@
                                         <i class="iconfont icon-fanzhuan1 animated infinite tada delay-1s"  @click="toggleFlag = !toggleFlag"></i>
                                     </div>
                                     <span class="work-detail">1.通过升级webpack、首页预渲染、合理拆包等优化提升原项目的首屏加载和打包速度（原10s到3s内）</span>
-                                    <span class="work-detail">2.构建开发了Portal、HRD平台、个税小程序等，移植app功能至微信公众号</span>
+                                    <span class="work-detail">2.构建开发了Portal、HRD平台、个税小程序等</span>
+                                    <span class="work-detail">3.移植app功能至微信公众号、企业微信</span>
+                                    <span class="work-detail">4.为嵌入至app的第三方应用提供了硬件接口如蓝牙、WIFI、定位等</span>
                                 </div>
                             </div>
                         </div>
@@ -68,13 +70,28 @@
                                 <span>前端开发</span>
                                 <span class="strong">(nuxt,ssr)</span>
                             </div>
-                            <div class="work">
-                                <span class="work-detail"></span>
-                                <span class="work-detail">1.负责公司原有项目的架构升级，性能优化</span>
-                                <span class="work-detail">2.负责新项目的构建</span>
-                                <span class="work-detail">3.参与业务需求的规划分析</span>
-                                <span class="work-detail">4.负责前端项目的code review</span>
-                                <span class="work-detail">5.业务上负责公司EcoSaas平台、小程序开发、公众号、企业微信、app的开发迭代，为第三方应用提供app硬件支持</span>
+                            <div class="work toggle-style" :class="!toggleFlag ? '' : 'toggle-style-active'">
+                                <div class="toggle-style-item toggle-style-font" :style="{height: swiperHeight - 60 + 'px'}">
+                                    <div class="work-header">
+                                        <span class="work-detail strong">工作职责</span>
+                                        <i class="iconfont icon-fanzhuan1 animated infinite tada delay-1s" @click="toggleFlag = !toggleFlag"></i>
+                                    </div>
+                                    <span class="work-detail">1.</span>
+                                    <span class="work-detail">2.负责新项目的构建</span>
+                                    <span class="work-detail">3.负责前端项目的部署和发布</span>
+                                    <span class="work-detail">4.负责前端项目的code review</span>
+                                    <span class="work-detail">5.负责公司Web项目、小程序、公众号、企业微信、APP的开发迭代</span>
+                                </div>
+                                <div class="toggle-style-item toggle-style-back"  :style="{height: swiperHeight - 60 + 'px'}">
+                                    <div class="work-header">
+                                        <span class="work-detail strong">主要业绩</span>
+                                        <i class="iconfont icon-fanzhuan1 animated infinite tada delay-1s"  @click="toggleFlag = !toggleFlag"></i>
+                                    </div>
+                                    <span class="work-detail">1.通过升级webpack、首页预渲染、合理拆包等优化提升原项目的首屏加载和打包速度（原10s到3s内）</span>
+                                    <span class="work-detail">2.构建开发了Portal、HRD平台、个税小程序等</span>
+                                    <span class="work-detail">3.移植app功能至微信公众号、企业微信</span>
+                                    <span class="work-detail">4.为嵌入至app的第三方应用提供了硬件接口如蓝牙、WIFI、定位等</span>
+                                </div>
                             </div>
                         </div>
                     </swiper-slide>
@@ -190,14 +207,6 @@ $lightgreen: rgb(188, 201, 142);
             }
             .toggle-style-active{
                 transform:rotateY(180deg);
-                // .toggle-style-font{
-                //     // z-index: 1;
-                //     transform: rotateY(-180deg);
-                // }
-                // .toggle-style-back{
-                //     // z-index: 2;
-                //     transform: rotateY(-360deg);
-                // }
             }
             .work{
                 margin-top: 20px;

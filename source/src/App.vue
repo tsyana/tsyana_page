@@ -2,16 +2,6 @@
   <div id="app">
     <qcrode v-if="!hideQcrode"></qcrode>
     <hello-world v-else></hello-world>
-    <!-- <div class="container">
-    <div class="flip">
-        <div class="front">
-            <div>front</div>
-        </div>
-        <div class="back">
-          <div>back</div>
-        </div>
-    </div>
-</div> -->
   </div>
 </template>
 
@@ -30,19 +20,13 @@ export default {
     }
   },
   created() {
-    // this.hideQcrode = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)
+    this.hideQcrode = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)
   }
 }
 </script>
 
 <style>
-.container{perspective:1000;transform-style:preserve-3d;}
-    .container,.front,.back{width:380px;height:270px;}
-    .flip{position:relative;transition:0.6s;transform-style:preserve-3d;}
-    .front,.back{position:absolute;top: 0px;left: 0px;backface-visibility:hidden;}
-    .front{z-index:2; background: bisque}
-    .back{transform:rotateY(-180deg);background: blueviolet;}
-    .container:hover .flip{transform:rotateY(180deg);}
+
 html, body{
   width: 100%;
   height: 100%;
