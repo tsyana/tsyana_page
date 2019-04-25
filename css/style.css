@@ -12,13 +12,38 @@ html, body{
 body{
 	background:#FFFFFF;
 }
+/* home intro */
+.intro{
+	margin-bottom: 4em; 
+}
+.intro-left-word {
+	color: black;
+	margin-top: 80px;
+}
+.intro-left-title{
+	font-size: 1.8em;
+}
+.intro-left-subtitle{
+	margin-top: 10px;
+	font-size: 1.3em;
+}
+.intro-left-image{
+	height: 350px;
+	transition: all 0.3s linear;
+	background: url(../images/g4.jpg) no-repeat 0px 0px;
+    background-size: cover;
+}
+.intro-left-image:hover{
+	transform: scale(1.01);
+    transition: all 0.3s linear;
+}
 /*-- banner --*/
 .w3-banner{
-	background: url(../images/banner.jpg) no-repeat 0px 0px;
+	background: url(../images/bg.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
 .w3-banner-1{
-	background: url(../images/banner.jpg) no-repeat 0px 0px;
+	background: url(../images/bg.jpg) no-repeat 0px 0px;
     background-size: cover;
 	min-height:300px;
 }
@@ -572,6 +597,7 @@ h3.agileits-title, h2.agileits-title {
 	-ms-transition: .5s all;
     transition: .5s all; 
 }
+
 .w3ls-services-img {
     width: 75px;
     height: 75px;
@@ -2050,9 +2076,10 @@ figure.effect-apollo:hover p {
 .w3l-services-grid {
     margin-bottom: 1em;
 }
-.services {
+.services, .intro {
     padding: 3em 0;
 }
+
 .stats.services {
     padding: 3em 0;
 }
