@@ -76,8 +76,8 @@
                                         <span class="work-detail strong">工作职责</span>
                                         <i class="iconfont icon-fanzhuan1 animated infinite tada delay-1s" @click="toggleFlag = !toggleFlag"></i>
                                     </div>
-                                    <span class="work-detail">1.</span>
-                                    <span class="work-detail">2.负责新项目的构建</span>
+                                    <span class="work-detail">1.负责新项目的开发</span>
+                                    <span class="work-detail">2.参与公共组件库的开发维护</span>
                                     <span class="work-detail">3.负责前端项目的部署和发布</span>
                                     <span class="work-detail">4.负责前端项目的code review</span>
                                     <span class="work-detail">5.负责公司Web项目、小程序、公众号、企业微信、APP的开发迭代</span>
