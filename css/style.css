@@ -37,6 +37,29 @@ body{
 	transform: scale(1.01);
     transition: all 0.3s linear;
 }
+/* tech */
+.black-modal{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	background: rgb(0,0,0);
+	opacity: 0.4;
+	z-index: 998;
+}
+.tech-gred:hover .black-modal{
+	display: none;
+}
+
+.grid-word{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	z-index: 999;
+}
 /*-- banner --*/
 .w3-banner{
 	background: url(../images/bg.jpg) no-repeat 0px 0px;
@@ -1884,9 +1907,12 @@ ul.bs-glyphicons-list {
 /***** Apollo *****/
 /*-----------------*/
 
+.class-page figure.effect-apollo img{
+	opacity: 0.95;
+}
 
 figure.effect-apollo img {
-	opacity: 0.95;
+	opacity: 1;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale3d(1.05,1.05,1);
@@ -1907,9 +1933,11 @@ figure.effect-apollo figcaption::before {
     transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
 }
 
-
-figure.effect-apollo:hover img {
+.class-page figure.effect-apollo:hover img{
 	opacity: 0.6;
+}
+figure.effect-apollo:hover img {
+	opacity: 1;
 	-webkit-transform: scale3d(1,1,1);
 	transform: scale3d(1,1,1);
 }
