@@ -41,7 +41,7 @@ body{
 .intro-left-image{
 	height: 350px;
 	transition: all 0.3s linear;
-	background: url(../images/g4.jpg) no-repeat 0px 0px;
+	background: url(../img/home/2.png) no-repeat 0px 0px;
     background-size: cover;
 }
 .intro-left-image:hover{
@@ -931,7 +931,7 @@ P {
 .subscribe { 
 	background: #333;
 	text-align:center;
-	background: url(../images/mid-banner.jpg)no-repeat center bottom fixed;
+	background: url(../img/home/1.png)no-repeat center bottom fixed;
 	background-size:cover;
 	padding: 8em 0;
 }
@@ -1979,6 +1979,7 @@ ul.bs-glyphicons-list {
 
 .class-page figure.effect-apollo img{
 	opacity: 0.95;
+	height: 200px;
 }
 
 figure.effect-apollo img {
@@ -1987,6 +1988,8 @@ figure.effect-apollo img {
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale3d(1.05,1.05,1);
 	transform: scale3d(1.05,1.05,1);
+	height: 150px;
+
 }
 
 figure.effect-apollo figcaption::before {
