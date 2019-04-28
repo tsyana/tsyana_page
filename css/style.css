@@ -48,6 +48,9 @@ body{
 	transform: scale(1.01);
     transition: all 0.3s linear;
 }
+.w3l-welcome-grid .img-responsive{
+	height: 150px;
+}
 /* tech */
 .black-modal{
 	position: absolute;
@@ -2557,6 +2560,7 @@ h3.agileits-title, h2.agileits-title {
     float: left;
     width: 100%;
 }
+
 .view.view-first h5 {
     left: 30%;
     bottom: -13%;
