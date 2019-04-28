@@ -13,12 +13,23 @@ body{
 	background:#FFFFFF;
 }
 /* home intro */
+.index-word-side{
+	text-align: center;
+}
+.index-word-side a{
+    color: #212121 !important;
+    border: 2px solid #212121 !important;
+}
+.index-word-side a:hover{
+	color: white !important;
+	border: 2px solid #fff !important;
+}
 .intro{
 	margin-bottom: 4em; 
 }
 .intro-left-word {
 	color: black;
-	margin-top: 80px;
+	margin-top: 155px;
 }
 .intro-left-title{
 	font-size: 1.8em;
@@ -400,7 +411,8 @@ ul.dropdown-menu {
 .callbacks_nav {
     position: absolute;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    top: 50%;
+	/* top: 50%; */
+	top: 42%;
     opacity: 0.7;
     z-index: 3;
     text-indent: -9999px;
@@ -915,7 +927,7 @@ P {
 	text-align:center;
 	background: url(../images/mid-banner.jpg)no-repeat center bottom fixed;
 	background-size:cover;
-	padding: 5em 0;
+	padding: 8em 0;
 }
 .subscribe p {
     width: 72%;
@@ -1064,9 +1076,27 @@ P {
     background: #212121;
     padding: 1em;
 }
+.contact-page .w3-address-grid{
+	background: white;
+	box-sizing: border-box;
+	transition: all 0.5s;
+	border: 1px solid white;
+}
+.contact-border:hover{
+	border: 1px solid #eee;
+	transition: all 0.5s;
+}
+.contact-border:hover h6{
+	color: #ff5301 !important;
+	transition: all 0.5s;
+}
 .w3-address-left{
 	float:left;
 	width:10%;
+}
+.contact-icon{
+	color: #212121 !important;
+	transition: all 0.5s;
 }
 .w3-address-left i.fa.fa-phone,.w3-address-left i.fa.fa-envelope,.w3-address-left i.fa.fa-map-marker{
     color: #FFFFFF;
@@ -1075,6 +1105,10 @@ P {
 .w3-address-right{
 	float: right;
     width: 87%;
+}
+.contact-page .w3-address-right h6{
+	color: #212121;
+	transition: all 0.5s;
 }
 .w3-address-right h6{
 	color: #FFFFFF;
