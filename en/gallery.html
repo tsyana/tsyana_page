@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Global Cooperation</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- bootstrap-css -->
-<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!--// bootstrap-css -->
-<!-- css -->
-<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
-<!--// css -->
-<!-- font-awesome icons -->
-<link href="../css/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome icons -->
-<!-- gallery -->
-<link rel="stylesheet" href="../css/lightbox.css">
-<!-- //gallery -->
-<!-- font -->
-<!-- //font -->
-<script src="../js/jquery-2.2.3.min.js"></script>
-<script src="../js/bootstrap.js"></script>
+	<title>Global Cooperation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- bootstrap-css -->
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!--// bootstrap-css -->
+	<!-- css -->
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="../css/font-awesome.css" rel="stylesheet">
+	<!-- //font-awesome icons -->
+	<!-- gallery -->
+	<link rel="stylesheet" href="../css/lightbox.css">
+	<!-- //gallery -->
+	<!-- font -->
+	<!-- //font -->
+	<script src="../js/jquery-2.2.3.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
 </head>
+
 <body>
 	<!-- w3-banner -->
 	<div class="w3-banner-1 jarallax">
@@ -60,17 +63,17 @@
 							<div class="navbar-brand logo ">
 								<h1><a href="index.html">Acrossea Technology Consulting</a></h1>
 							</div>
-	
+
 						</div>
-	
+
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav link-effect-4">
 								<li class="first-list"><a href="index.html">Home</a></li>
-								<li ><a href="about.html">Our Profile</a></li>
+								<li><a href="about.html">Our Profile</a></li>
 								<li class="active"><a href="gallery.html">Global Cooperation</a></li>
 								<li><a href="tech.html">Technical consulting</a></li>
-	
+
 								<li><a href="class.html">Product Categories</a></li>
 								<li><a href="hr.html">Human Resources</a></li>
 								<li><a href="contact.html">Contact us</a></li>
@@ -79,155 +82,125 @@
 					</div>
 				</div>
 			</div>
-	
+
 		</div>
 	</div>
-<script src="../js/jarallax.js"></script>
-<script src="../js/SmoothScroll.min.js"></script>
-<script type="text/javascript">
-	/* init Jarallax */
-	$('.jarallax').jarallax({
-		speed: 0.5,
-		imgWidth: 1366,
-		imgHeight: 768
-	})
-</script>
+	<script src="../js/jarallax.js"></script>
+	<script src="../js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
 	<div class="welcome">
-		<div class="container">
+		<div class="container" id="gallery-welcome-container">
 			<h3 class="agileits-title">Global Cooperation</h3>
-			<div class="w3-welcome-grids">
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="../img/gallery/1.png" alt=" " class="img-responsive" />
-					<div class="agileits-welcome-info">
-						<h4>人才交流</h4>
-						<p>针对企业所需人才提供针对服务，降低劳工成本解决企业招工困难。</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="../images/g2.jpg" alt=" " class="img-responsive" />
-					<div class="agileits-welcome-info">
-						<h4>培训推荐</h4>
-						<p>针对相关领域及企业针对性问题提供分析方案并对相关人员进行培训</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="../img/gallery/8.png" alt=" " class="img-responsive" />
-					<div class="agileits-welcome-info">
-						<h4>国际推广</h4>
-						<p>为会员企业提供其他国家销售渠道，拓展市场渠道。</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="../img/gallery/5.png" alt=" " class="img-responsive" />
-					<div class="agileits-welcome-info">
-						<h4>工艺提升</h4>
-						<p>为企业制定产品升级方案，帮助企业对接解决升级中的难题。 </p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var gallery = [
+			{
+				data: [
+					{ h4: 'International technical talent exchange', p: 'Providing targeted services for the human requirement, reducing labor costs and solving difficulties in recruiting', img: 'img/gallery/1.png', id: 1 },
+					{ h4: 'Training recommendation', p: 'Providing analysis programs and training staff in relevant fields and enterprise-specific issues', img: 'img/gallery/2.png', id: 2 },
+					{ h4: 'International Promotion', p: 'Providing Global sales and expanding market  for members', img: 'img/gallery/8.png', id: 8 },
+					{ h4: 'Process improvement', p: 'Developing product upgrade programs and help enterprises to solve problems in the technical process', img: 'img/gallery/5.png', id: 5 },
+				]
+			},
+
+			{
+				data: [
+					{ h4: 'Strategic Planning', p: 'Analyze the future and drafting technical strategic of enterprise from Industry Trends，competitions and technology trends', img: 'img/gallery/4.png', id: 4 },
+					{ h4: 'Project Recommendation', p: 'Broaden to get high-quality projects and catch business opportunities in a timely', img: 'img/gallery/6.png', id: 6 },
+					{ h4: 'Survey evaluation', p: 'Providing early-stage technology, team,industry,marketing and others survey and evaluation, industry and external research', img: 'img/gallery/7.png', id: 7 },
+					{ h4: 'Resource integration', p: 'Provides essential elements for enterprise technology , including technical experts, technicians, incubation sites, resource connect, etc', img: 'img/gallery/3.png', id: 3 },
+				]
+			},
+			{
+				data: [
+					{ h4: 'New product development', p: 'Developing standards of products development and help enterprises complete technical innovation and upgrade', img: 'img/gallery/9.png', id: 9 },
+				]
+			},
+		]
+		for (var i = 0; i < gallery.length; i++) {
+			var template = ''
+			for (var b = 0; b < gallery[i].data.length; b++) {
+				template += '<div class="col-md-3 col-xs-6 w3l-welcome-grid">' +
+					'<img src = "../' + gallery[i].data[b].img + '" alt = " " class="img-responsive" />' +
+					'<div class="agileits-welcome-info">' +
+					'<h4>' + gallery[i].data[b].h4 + '</h4>' +
+					'<p>' + gallery[i].data[b].p + '</p>' +
+					'</div>' +
+					'</div >'
+			}
+			template = '<div class="w3-welcome-grids">' + template + '<div class="clearfix"></div>' + '</div>'
+			$('#gallery-welcome-container').append(template)
+		}
+	</script>
+
+	<div class="agileits-w3layouts-footer">
+		<div class="container">
+			<div class="col-md-4 w3-agile-grid">
+				<h5>Our Profile</h5>
+				<p>Acrossea Technology Consulting Co.,LTD Is a professional organization engaged in corporate training,
+					technical
+					consulting, human resources consulting, resource integration, international business connect,
+					providing overall
+					solutions.</p>
 			</div>
-			<div class="w3-welcome-grids">
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="../img/gallery/4.png" alt=" " class="img-responsive" />
-					<div class="agileits-welcome-info">
-						<h4>战略规划</h4>
-						<p>从行业趋势、竞对情况、技术项目、项目申报补贴等方面分析企业现状，为企业梳理技术创新的思路，制定技术创新实施方案。</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="../img/gallery/6.png" alt=" " class="img-responsive" />
-					<div class="agileits-welcome-info">
-						<h4>项目推荐</h4>
-						<p>拓宽企业对优质项目的获取渠道，及时把握技术商机</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="../img/gallery/7.png" alt=" " class="img-responsive" />
-					<div class="agileits-welcome-info">
-						<h4>调研评估</h4>
-						<p>为企业在引进技术中保驾护航，提供前期技术、团队及关联内容评估、业内外调研。</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="../img/gallery/3.png" alt=" " class="img-responsive" />
-					<div class="agileits-welcome-info">
-						<h4>资源整合</h4>
-						<p>为企业技术研发提供必需要素,包括技术专家、技术人员、孵化场地、资源对接等有针对性的制定方案。 </p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
+			<div class="col-md-4 w3-agile-grid">
+				<h5>Follow Us</h5>
+				<img style="width: 150px;height: 150px;" src="../images/small-qc.png" alt="">
 			</div>
-			<div class="w3-welcome-grids">
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="../img/gallery/7.png" alt=" " class="img-responsive" />
-					<div class="agileits-welcome-info">
-						<h4>新品研发</h4>
-						<p>为企业研发产品制定实施细则，助力企业完成技术改造及升级。</p>
+			<div class="col-md-4 w3-agile-grid">
+				<h5>Contacts</h5>
+				<div class="w3-address">
+					<div class="w3-address-grid">
+						<div class="w3-address-left">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</div>
+						<div class="w3-address-right">
+							<h6>Tel</h6>
+							<p>+400-926-5758</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="w3-address-grid">
+						<div class="w3-address-left">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</div>
+						<div class="w3-address-right">
+							<h6>International Tel</h6>
+							<p>+86-13520728445</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="w3-address-grid">
+						<div class="w3-address-left">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<div class="w3-address-right">
+							<h6>Email</h6>
+							<p><a href="mailto:ecustomer2@supvisa.com"> customer2@supvisa.com</a></p>
+						</div>
+						<div class="clearfix"> </div>
 					</div>
 				</div>
-				<div class="clearfix"> </div>
 			</div>
+
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="container">
+			<p>Copy right of Acrossea Technology Consulting Co.,LTD @2018 ICP-17056132</p>
 		</div>
 	</div>
 
-
-		<div class="agileits-w3layouts-footer">
-			<div class="container">
-				<div class="col-md-4 w3-agile-grid">
-					<h5>Our Profile</h5>
-					<p>Acrossea Technology Consulting Co.,LTD Is a professional organization engaged in corporate training, technical
-					consulting, human resources consulting, resource integration, international business connect, providing overall
-					solutions.</p>
-				</div>
-				<div class="col-md-4 w3-agile-grid">
-					<h5>Follow Us</h5>
-					<img style="width: 150px;height: 150px;" src="../images/small-qc.png" alt="">
-				</div>
-				<div class="col-md-4 w3-agile-grid">
-					<h5>Contacts</h5>
-					<div class="w3-address">
-						<div class="w3-address-grid">
-							<div class="w3-address-left">
-								<i class="fa fa-phone" aria-hidden="true"></i>
-							</div>
-							<div class="w3-address-right">
-								<h6>Tel</h6>
-								<p>+400-926-5758</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="w3-address-grid">
-							<div class="w3-address-left">
-								<i class="fa fa-phone" aria-hidden="true"></i>
-							</div>
-							<div class="w3-address-right">
-								<h6>International Tel</h6>
-								<p>+86-13520728445</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="w3-address-grid">
-							<div class="w3-address-left">
-								<i class="fa fa-envelope" aria-hidden="true"></i>
-							</div>
-							<div class="w3-address-right">
-								<h6>Email</h6>
-								<p><a href="mailto:ecustomer2@supvisa.com"> customer2@supvisa.com</a></p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-		
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="copyright">
-			<div class="container">
-				<p>Copy right of Acrossea Technology Consulting Co.,LTD @2018 ICP-17056132</p>
-			</div>
-		</div>
-		
 	<!-- //footer -->
-</body>	
+</body>
+
 </html>
