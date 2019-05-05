@@ -304,9 +304,9 @@ ul.dropdown-menu {
 .slider-info h3{
     font-size: 6em;
     margin: 0;
-	/* color: #FFF; */
-	color: #F0FFFF;
-    font-weight: 100;
+	color: #FFF;
+	text-shadow:1px 0px 0px rgb(4, 80, 172),-1px 0px 0px rgb(4, 80, 172),0px 1px 0px rgb(4, 80, 172),0px -1px 0px rgb(4, 80, 172);
+/*     font-weight: 100; */
 }
 .animated {
   -webkit-animation-duration: 1s;
