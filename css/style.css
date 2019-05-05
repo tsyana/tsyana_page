@@ -301,11 +301,11 @@ ul.dropdown-menu {
     text-align: center;
     margin: 6em 0 0 0;
 }
-.slider-info h3{
+ {
     font-size: 6em;
     margin: 0;
 	color: #FFF;
-	text-shadow:1px 0px 0px rgb(4, 80, 172),-1px 0px 0px rgb(4, 80, 172),0px 1px 0px rgb(4, 80, 172),0px -1px 0px rgb(4, 80, 172);
+	text-shadow:2px 0px 0px rgb(4, 80, 172),-2px 0px 0px rgb(4, 80, 172),0px 2px 0px rgb(4, 80, 172),0px -2px 0px rgb(4, 80, 172);
 /*     font-weight: 100; */
 }
 .animated {
