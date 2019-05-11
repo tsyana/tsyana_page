@@ -6,7 +6,7 @@ body a {
   -ms-transition: 0.5s all;
 }
 .head .container{
-	width: 90%;
+	width: 98%;
 }
 html, body{
     font-size: 100%;
@@ -195,7 +195,7 @@ body{
 }
 .navbar-nav {
     float: right;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 .navbar-default {
     border: none;
@@ -211,7 +211,7 @@ div#bs-example-navbar-collapse-1 {
 	width: 0px !important;
 }
 ul.nav.navbar-nav li a {
-	font-size: .8em;
+	font-size: 1em;
     color: #FFFFFF;
     margin: 0 0.4em;
     padding: .5em 0.4em;
